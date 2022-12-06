@@ -7,9 +7,11 @@ Used Flask and HTML/CSS to create a web application that takes an input and a nu
 
 # How To Use
 
-Install dependencies (may be others)
+```git clone https://github.com/Andre14254/music-recommender.git```
 
-`pip install Flask
+Install dependencies (there may be others)
+
+```pip install Flask
 
 pip install annoy
 
@@ -21,4 +23,8 @@ pip install json
 
 pip install os
 
-pip install tensorflow`
+pip install tensorflow```
+
+In terminal, run ```python app.py```.
+
+Enter an ID from a song below and choose the number of songs you want returned and a list of videos will appear.
