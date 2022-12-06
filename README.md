@@ -9,7 +9,7 @@ Flask and HTML/CSS were used to create a web application that takes an input and
 
 ```git clone https://github.com/Andre14254/music-recommender.git```
 
-Install dependencies (there may be others)
+Install dependencies (there may be others):
 
 ```pip install Flask
 
