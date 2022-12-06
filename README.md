@@ -23,7 +23,9 @@ pip install json
 
 pip install os
 
-pip install tensorflow```
+pip install tensorflow
+
+```
 
 In terminal, run `python app.py`.
 
