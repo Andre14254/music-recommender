@@ -29,4 +29,6 @@ pip install tensorflow
 
 In terminal, run `python app.py`.
 
+Go to http://127.0.0.1:5000/index.
+
 Enter an ID from a song below and choose the number of songs you want returned and a list of videos will appear.
