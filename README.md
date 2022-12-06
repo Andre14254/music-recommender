@@ -3,7 +3,7 @@ A Python Flask App which takes an input of YouTube music and returns recommendat
 
 An audioset dataset of YouTube songs gets passed into an embedding generator, which converts the data into a vector, and passes it into a recommendation engine with a library that performs an Approximate Nearest Neighbor algorithm to find a list of the closest recommendations in the dataset.
 
-Used Flask and HTML/CSS to create a web application that takes an input and a number of songs we want recommended and return a list of videos that most closely matches the inputted song.
+Flask and HTML/CSS were used to create a web application that takes an input and a number of songs we want recommended and return a list of videos that most closely matches the inputted song.
 
 # How To Use
 
