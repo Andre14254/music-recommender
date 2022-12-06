@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %} - FlaskApp</title>
+    <style>
+        .message {
+            padding: 10px;
+            margin: 5px;
+            background-color: #f3f3f3
+        }
+        nav a {
+            color: #d64161;
+            font-size: 3em;
+            margin-left: 50px;
+            text-decoration: none;
+        }
+
+        .alert {
+            padding: 20px;
+            margin: 5px;
+            color: #970020;
+            background-color: #ffd5de;
+        }
+
+    </style>
+</head>
+<h2> Please input a song ID</h2>
+			<div class="break"></div>
+				<div>
+					<form  id="form" method="POST">
+						<input class="input" type="text" name="ID">
+						<div class="break"></div>
+						<div class="break"></div>
+							 <label for="number-of-recs" >Select the number of songs you want displayed:</label>
+							<select name="number-of-recs" id="number-of-recs" form="form">
+							 	<option value="4" selected> 4</option>
+								<option value="8">8</option>
+							 	<option value="12">12</option>
+							 	<option value="16">16</option>
+							 </select>
+							<div class="break"></div>
+						<input class='button' form='form' value='Get similar song videos' type="submit">
+					</form>
+				</div>
+                <div class="results">
+				<div class='results'>
+    <h2>Results</h2>
+        {% for song in recs %}
+        <iframe width="420" height="315"
+src="https://www.youtube.com/embed/{{ song }}">
+</iframe>
+        {% endfor %} 
+</div>
+<div class='results'>
+    <h2>Song List</h2>
+    {% set i = namespace(value=0) %}
+        {% for song in songs %}
+        <h3>{{ i.value }}: </h3>
+        {% set i.value = i.value + 1 %}
+        <iframe width="420" height="315"
+src="https://www.youtube.com/embed/{{ song }}">
+</iframe>
+
+        {% endfor %} 
+</div>
+			</div>
+</html>
