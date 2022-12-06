@@ -25,6 +25,6 @@ pip install os
 
 pip install tensorflow```
 
-In terminal, run ```python app.py```.
+In terminal, run `python app.py`.
 
 Enter an ID from a song below and choose the number of songs you want returned and a list of videos will appear.
